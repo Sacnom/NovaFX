@@ -1,0 +1,24 @@
+{
+  "name": "novafx-simulator",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k \"node server/index.js\" \"vite --host 0.0.0.0\"",
+    "build": "vite build",
+    "start": "node server/index.js",
+    "test": "node --test src/trading.test.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "recharts": "^2.15.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "vite": "^6.0.7"
+  }
+}
